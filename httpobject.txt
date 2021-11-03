@@ -1,0 +1,70 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+1. HTTP1.1 is created in 1997
+   HTTP2 is created in 2015.
+
+2. HTTP1.1 is supports connection reuse, persistent, pipelining, cache-control
+   HTTP2 is uses muliplexing and server push.
+
+3. HTTP1.1 is The standardized protocol More than 15 years of extensions
+   HTTP2 is a protocol for greater performance
+
+4. HTTP1.1 - Version 1.1 was released in 1997 and became the Internet Standard. This version added many performance enhancements, such as keepalive connections, caching mechanisms, request pipelining, transfer encodings, and byte range requests.
+   HTTP2 - Released in February 2015 by the Internet Engineering Task Force (IETF) focussed on improving the performance of HTTP. This article focuses on the major changes of this version in more detail.
+
+5. HTTP1.x uses text-based commands to complete HTTP requests. If you were to view one of these requests they would be perfectly readable (to a system admin at least)
+   HTTP2, on the other hand, uses binary commands (1s and 0s) to complete HTTP requests. It needs to be converted back from binary to read the request.
+
+
+
+Objects And Its Internal Representation In JavaScript
+
+     Objects, in JavaScript, is it’s most important data-type and forms the building blocks for modern JavaScript. These objects are quite different from JavaScript’s primitive data-types(Number, String, Boolean, null, undefined and symbol) in the sense that while these primitive data-types all store a single value each (depending on their types).
+Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+An object, is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to that value. That reference or pointer points to the location in memory where the object is stored. The variables don’t actually store the value.
+Loosely speaking, objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+For Eg. If your object is a student, it will have properties like name, age, address, id, etc and methods like updateAddress, updateNam, etc.
+
+simple objects
+
+    function Dog (name) {
+    this.name = name;
+    }
+
+var brownie = new Dog('Brownie');
+
+console.log(fido.name); // 'Brownie'
+
+
+Object Life Cycle
+
+1.Objects are created, used, and discarded
+2.Constructors are implicit in JavaScript - natural
+3.A constructor in a class is a special block of statements called when an object is created
+4.Destructors are not provided by JavaScript
+
+Many Instances
+
+1.We can create lots of objects - the class is the template for the object.
+2.We can store each distinct object in its own variable.
+3.We call this having multiple instances of the same class.
+4.Each instance has its own copy of the instance variables.
+
+
+Class & Object Hoisting
+
+!!function declarations and class declarations is that function declarations are hoisted and class declarations are not
+
+class declaration
+const p = new Rectangle(); // ReferenceError
+
+class Rectangle {}
+
+function declaration
+
+f1();
+function f1()
+{
+console.log("I am always hoisted");
+}
+
+
